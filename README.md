@@ -2,6 +2,10 @@
 
 中央大學校園失物招領系統。此 repository 同時容納前端與後端專案。
 
+![picture-1](./docs/picture-1.png)
+
+![picture-1](./docs/picture-2.png)
+
 ## 目錄
 
 - [`frontend/`](frontend/)：React 前端，包含原始碼、靜態資源、套件設定、部署範本與預覽截圖。
