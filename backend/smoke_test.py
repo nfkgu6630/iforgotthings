@@ -116,6 +116,9 @@ assert post["returned_at"] is None, "a new post has no return time"
 
 detail = check("detail as guest -> 200", guest.get(f"/api/posts/{post['id']}"), 200)
 assert detail["contact"] == "IG: tester2" and detail["is_owner"] is False
+assert detail["author_name"] == "測試者二號（115423099）", "author shows display name + student ID"
+listed_mine = guest.get("/api/posts?q=紅色筆袋").get_json()["posts"][0]
+assert listed_mine["author_name"] == "測試者二號（115423099）", "list shows display name + student ID"
 check("detail missing -> 404", guest.get("/api/posts/99999"), 404)
 
 # 修改與刪除

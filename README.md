@@ -9,7 +9,7 @@
 ## 目錄
 
 - [`frontend/`](frontend/)：React 前端，包含原始碼、靜態資源、套件設定、部署範本與預覽截圖。
-- [`backend/`](backend/)：Flask + PostgreSQL 後端，提供 10 支 API（帳號、貼文、照片上傳），已部署於 PVE 容器 111（`http://10.10.10.111:5000`）。
+- [`backend/`](backend/)：Flask + PostgreSQL 後端，提供 11 支 API（帳號、貼文、照片上傳），已部署於 PVE 容器 111（`http://10.10.10.111:5000`）。
 
 ## 啟動前端
 
