@@ -256,7 +256,8 @@ def post_detail_out(row):
 
 
 POST_SELECT = """
-    SELECT p.*, u.display_name AS author_name, u.contact AS author_contact
+    SELECT p.*, u.display_name || '（' || u.username || '）' AS author_name,
+           u.contact AS author_contact
     FROM posts p JOIN users u ON u.id = p.user_id
 """
 
